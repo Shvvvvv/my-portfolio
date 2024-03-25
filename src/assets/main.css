@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto Condensed';
+  background: #eee !important;
+  color: #222831;
+}
+
+html {
+  scroll-behavior: smooth;
+}
