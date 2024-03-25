@@ -46,17 +46,14 @@ const sendEmail = async (): Promise<void> => {
 </script>
 
 <template>
-  <section
-    id="contact"
-    class="w-screen scroll-mt-16 bg-fontColor text-primaryColor p-8 md:p-16 lg:p-28"
-  >
+  <section id="contact" class="scroll-mt-16 bg-fontColor text-primaryColor p-8 md:p-16 lg:p-28">
     <p
       class="my-4 text-xl relative w-fit after:content-[''] after:bg-highlightColor after:w-[50vw] after:h-[.1rem] after:absolute after:left-[140%] after:top-3"
     >
       Contact
     </p>
     <p class="text-5xl">CONTACT ME</p>
-    <div class="flex flex-wrap gap-4 mt-4">
+    <div class="flex flex-wrap gap-4 mt-4 2xl:justify-center">
       <BoxCard class="w-full" title="Email Me">
         <template #icon>
           <font-awesome-icon icon="envelope" />
@@ -65,7 +62,7 @@ const sendEmail = async (): Promise<void> => {
           <p>arisandishevamaldini@gmail.com</p>
         </template>
       </BoxCard>
-      <BoxCard class="w-full md:w-[48.7%]" title="Call Me">
+      <BoxCard class="w-full md:w-[48.7%] lg:w-[49%] xl:w-[49.2%] 2xl:w-[49.3%]" title="Call Me">
         <template #icon>
           <font-awesome-icon icon="phone" />
         </template>
@@ -73,7 +70,10 @@ const sendEmail = async (): Promise<void> => {
           <p>+62 851 7531 2269</p>
         </template>
       </BoxCard>
-      <BoxCard class="w-full md:w-[48.7%]" title="Whatsapp Me">
+      <BoxCard
+        class="w-full md:w-[48.7%] lg:w-[49%] xl:w-[49.2%] 2xl:w-[49.3%]"
+        title="Whatsapp Me"
+      >
         <template #icon>
           <font-awesome-icon :icon="['fab', 'whatsapp']" />
         </template>
@@ -88,19 +88,19 @@ const sendEmail = async (): Promise<void> => {
       </a>
     </div>
     <div
-      class="w-full bg-secondaryColor mt-5 rounded p-5 flex flex-col md:flex-row md:flex-wrap gap-5"
+      class="w-full bg-secondaryColor mt-5 rounded p-5 flex flex-col md:flex-row md:flex-wrap gap-5 2xl:justify-center"
     >
       <input
         type="text"
         placeholder="Your Name"
         v-model="inputSendEmail.name"
-        class="w-full md:w-[48.2%] lg:w-[48.4%] p-3 bg-slate-400/50 rounded focus:outline-none"
+        class="w-full md:w-[48.3%] lg:w-[48.65%] xl:w-[49%] 2xl:w-[49.2%] p-3 bg-slate-400/50 rounded focus:outline-none"
       />
       <input
         type="text"
         placeholder="Your Email"
         v-model="inputSendEmail.email"
-        class="w-full md:w-[48.2%] lg:w-[48.4%] p-3 bg-slate-400/50 rounded focus:outline-none"
+        class="w-full md:w-[48.3%] lg:w-[48.65%] xl:w-[49%] 2xl:w-[49.2%] p-3 bg-slate-400/50 rounded focus:outline-none"
       />
       <input
         type="text"

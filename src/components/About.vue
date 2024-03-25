@@ -5,7 +5,7 @@ import Skill from './Skill.vue'
 <template>
   <section
     id="about"
-    class="about w-screen scroll-mt-16 bg-fontColor text-primaryColor p-8 sm:p-10 md:p-16 lg:px-24"
+    class="about scroll-mt-16 bg-fontColor text-primaryColor p-8 sm:p-10 md:p-16 lg:px-24 box-border"
     ref="about"
   >
     <div class="lg:px-20 xl:px-28">
